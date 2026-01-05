@@ -31,6 +31,13 @@
    - Added Emoji for projects - все emoji собрал в файлах в своей папке - теперь не дергаюсь когда нужна какая либо из emoji.
 
 
+   ## 05 Jan 0.1.1 Added: JavaScript, Typescript, Emoji reference materials. For more details, see readme.md!
+   - Added file: 'Object.freeze() & deepFreeze() & as const.ts' - сравнение вариантов заморозки объектов.
+   - 'null undefined void.ts' - мелкие изменения в комментариях.
+   - Убрал .alpha в версии - в принципе уже рабочий вариант - лучше убрать.
+   - Ввел правила для комитов - образец смотри в заголовке блока, после добавления новой папки ее пропишу просто, а все более подробное в README.MD
+
+
 
 
 
