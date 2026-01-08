@@ -38,6 +38,10 @@
    - Ввел правила для комитов - образец смотри в заголовке блока, после добавления новой папки ее пропишу просто, а все более подробное в README.MD
 
 
+   ## 08 Jan 0.1.2 Added: JavaScript, Typescript, Emoji reference materials. For more details, see readme.md!
+   - null undefined void.ts: мелкие изменения изображений.
+
+
 
 
 
