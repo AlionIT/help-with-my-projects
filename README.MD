@@ -62,6 +62,10 @@
    - Ввел обязательство печатать год для комита в описании комита в данном файле.
 
 
+   ## 13 Jan 2026 0.4.2 Added: JavaScript, Typescript, Emoji, DevOps, Python reference materials. For more details, see readme.md!
+   - Забыл при предыдущем комите указать сам номер версии - исправил чтобы по команде git log все стало правильно и понятно.
+
+
 
 
 
