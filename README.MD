@@ -22,6 +22,16 @@
 
 
 
+# Правила нумерации при версионировании
+   `MAJOR.MINOR.PATCH`
+   - MAJOR.MINOR.PATCH - MAJOR версия в принципе не нужна пока и её не используем - пока 0
+   - MINOR.PATCH - MINOR версия отражает количество областей знаний которые собраны в этом репозитарии - тут правило Одна папка = Одна область знаний.
+   - PATCH - PATCH версия в это проекте не привязана к минорной части, а отражает общее количество изменений для всего репозитарии и не буду её обнулять.
+
+
+
+
+
 # Versions:
 
 
@@ -40,6 +50,16 @@
 
    ## 08 Jan 0.1.2 Added: JavaScript, Typescript, Emoji reference materials. For more details, see readme.md!
    - null undefined void.ts: мелкие изменения изображений.
+
+
+   ## 12 Jan 0.4.0 Added: JavaScript, Typescript, Emoji, DevOps, Python reference materials. For more details, see readme.md!
+   - Python/ добавил папку Python
+   - Ввожу новые правила номерации версионирования - блок перед версионным блоком "Правила нумерации при версионировании"
+   - Версия переделана в соответствий с новыми правилами - 0.4.0 начнем патчевую часть с нуля ничего страшного.
+
+
+   ## 13 Jan 2026 0.4.1 Added: JavaScript, Typescript, Emoji, DevOps, Python reference materials. For more details, see readme.md!
+   - Ввел обязательство печатать год для комита в описании комита в данном файле.
 
 
 
