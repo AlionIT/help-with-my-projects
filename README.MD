@@ -66,6 +66,10 @@
    - Забыл при предыдущем комите указать сам номер версии - исправил чтобы по команде git log все стало правильно и понятно.
 
 
+   ## 23 Jan 2026 0.5.0 Added: JavaScript, Typescript, Emoji, DevOps, Python, Ai reference materials. For more details, see readme.md!
+   - Ai папку добавил - буду все что попадается интересное вносить в эту папку.
+
+
 
 
 
