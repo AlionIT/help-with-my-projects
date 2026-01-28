@@ -80,6 +80,10 @@
    - ConfiguringLaptopsForAutomation\configuring-laptops-for-automation.md - мелкие изменения.
 
 
+   ## 28 Jan 2026 0.6.2 Added: JavaScript, Typescript, Emoji, DevOps, Python, Ai, Terminals, ConfiguringLaptopsForAutomation.
+   - ConfiguringLaptopsForAutomation\configuring-laptops-for-automation.md - мелкие изменения.
+
+
 
 
 
