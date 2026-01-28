@@ -76,6 +76,10 @@
    - Изменил коммент убрал текст " reference materials. For more details, see readme.md!" только мешается - коммент длинный и в нем прописываются все папки подключенные.
 
 
+   ## 28 Jan 2026 0.6.1 Added: JavaScript, Typescript, Emoji, DevOps, Python, Ai, Terminals, ConfiguringLaptopsForAutomation.
+   - ConfiguringLaptopsForAutomation\configuring-laptops-for-automation.md - мелкие изменения.
+
+
 
 
 

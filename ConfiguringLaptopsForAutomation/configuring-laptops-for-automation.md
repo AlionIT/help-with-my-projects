@@ -46,7 +46,8 @@
                 keybindings.json
                 myIconTheme.json
                 settings.json
-
+            📁Git
+                tokens.txt
         📁midjourney-bot - в папке находится репозитарий в котором находятся скрипты для автоматизации
         🚀configuring-laptops-for-automation.md - это наш файл - он является нашей инструкцией на ноутбуке для автоматизации
 
@@ -92,3 +93,9 @@
         # Вы должны увидеть:
         origin  https://github.com/VibeImp/midjourney-bot.git (fetch)
         origin  https://github.com/VibeImp/midjourney-bot.git (push)
+
+
+
+
+
+🎯 Поздравляю - у нас все готово к работе!
