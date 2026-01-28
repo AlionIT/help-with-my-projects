@@ -70,6 +70,12 @@
    - Ai папку добавил - буду все что попадается интересное вносить в эту папку.
 
 
+   ## 28 Jan 2026 0.6.0 Added: JavaScript, Typescript, Emoji, DevOps, Python, Ai, Terminals, ConfiguringLaptopsForAutomation.
+   - Terminals/ папку добавил - скрипты и руководства по настройке терминалов - тема ужасно глючная и муторная - больше недели на нее потратил.
+   - ConfiguringLaptopsForAutomation/ - создал папку для темы "Настраиваем ноутбуки для развертывания автоматизации"
+   - Изменил коммент убрал текст " reference materials. For more details, see readme.md!" только мешается - коммент длинный и в нем прописываются все папки подключенные.
+
+
 
 
 
