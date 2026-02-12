@@ -84,6 +84,10 @@
    - ConfiguringLaptopsForAutomation\configuring-laptops-for-automation.md - мелкие изменения.
 
 
+   ## 12 Feb 2026 0.7.0 Added: JavaScript, Typescript, Emoji, DevOps, Python, Ai, Terminals, ConfiguringLaptopsForAutomation, Codex.
+   - Codex/ добавил папку и создал инструкцию по совместной работе Git + webCodex.
+
+
 
 
 
