@@ -88,6 +88,10 @@
    - Codex/ добавил папку и создал инструкцию по совместной работе Git + webCodex.
 
 
+   ## 13 Feb 2026 0.7.1 Added: JavaScript, Typescript, Emoji, DevOps, Python, Ai, Terminals, ConfiguringLaptopsForAutomation, Codex.
+   - Codex - дополнительную информацию добавил и проверил в работе.
+
+
 
 
 
