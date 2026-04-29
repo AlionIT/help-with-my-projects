@@ -92,6 +92,14 @@
    - Codex - дополнительную информацию добавил и проверил в работе.
 
 
+   ## 29 Apr 2026 0.8.0 Added: JavaScript, Typescript, Emoji, DevOps, Python, Ai, Terminals, ConfiguringLaptopsForAutomation, Codex.
+   - Добавил информацию для подключения к ai cloud Google - на этот раздел даю ссылку в каждом проекте для быстрого подключения к ai cloud Google.
+
+
+   ## 29 Apr 2026 0.8.1 Added: JavaScript, Typescript, Emoji, DevOps, Python, Ai, Terminals, ConfiguringLaptopsForAutomation, Codex.
+   - Ai-clouds\google-cloud-vertex-ai\AGENT-BRIEF.md - Один файл как точка входа для меня при подключении проектов к ai cloud Google, так и для агентов работающих в других проектах.
+
+
 
 
 
