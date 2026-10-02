@@ -100,6 +100,13 @@
    - Ai-clouds\google-cloud-vertex-ai\AGENT-BRIEF.md - Один файл как точка входа для меня при подключении проектов к ai cloud Google, так и для агентов работающих в других проектах.
 
 
+   ## 02 Oct 2026 0.9.0 Added: JavaScript, Typescript, Emoji, DevOps, Python, Terminals, ConfiguringLaptopsForAutomation, Ai-clouds.
+   - Ai-clouds/google-cloud-vertex-ai: добавлена подробная документация по каталогу моделей, маршрутизации текстовых моделей и квотам Free Trial (8-model-catalog.md, 9-text-model-routing.md, 10-free-trial-models.md).
+   - Ai-clouds/google-cloud-vertex-ai/examples: добавлены тестовые скрипты проверки маршрутов генерации (test_vertex_text_routes.py, test_free_trial_media_routes.py).
+   - Обновлены AGENT-BRIEF.md, 4-models.md, 5-troubleshooting.md и README.md в разделе Vertex AI.
+   - Удалены устаревшие файлы из Ai-work/ и Codex/.
+
+
 
 
 

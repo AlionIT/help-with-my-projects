@@ -21,6 +21,20 @@ W:\MyIdeas\AlionIT\help-with-my-projects\Ai-clouds\google-cloud-vertex-ai\AGENT-
 Используй основную схему:
 .env.local -> service account JSON -> ADC -> Vertex AI -> Gemini
 
+Если нужно выбрать модель, открой каталог:
+W:\MyIdeas\AlionIT\help-with-my-projects\Ai-clouds\google-cloud-vertex-ai\8-model-catalog.md
+
+Если проект работает на Google Cloud Free Trial / $300 credits, сначала открой free-trial baseline:
+W:\MyIdeas\AlionIT\help-with-my-projects\Ai-clouds\google-cloud-vertex-ai\10-free-trial-models.md
+
+Если нужно вызвать не-Gemini модель, обязательно открой инструкцию по маршрутам:
+W:\MyIdeas\AlionIT\help-with-my-projects\Ai-clouds\google-cloud-vertex-ai\9-text-model-routing.md
+
+В каталоге есть готовые группы для быстрого выбора: basic-text, research, coding-agents, cheap-bulk, images, video, audio-live, embeddings-search, ocr-docs.
+Если пользователь не попросил конкретную модель, начинай с gemini-2.5-flash.
+
+На Free Trial baseline не выбирай Claude, Mistral, Grok, AI21 или Llama как рабочие модели. Используй только модели из 10-free-trial-models.md.
+
 В подготовленных проектах .env.local уже должен быть создан. Не пересоздавай и не перезаписывай его без отдельной причины.
 Не используй API key.
 Не коммить .env.local.
@@ -34,6 +48,9 @@ W:\MyIdeas\AlionIT\help-with-my-projects\Ai-clouds\google-cloud-vertex-ai\AGENT-
 Если нужно больше контекста, сначала читай:
 
 - `README.md`
+- `8-model-catalog.md`
+- `9-text-model-routing.md`
+- `10-free-trial-models.md`
 - `7-project-service-account-auth.md`
 - `examples/test_service_account_adc.py`
 - `examples/test_gcloud_user_adc.py`
@@ -53,6 +70,80 @@ project .env.local
 ```
 
 Не начинай с API key и не делай новую схему через пользовательский `gcloud`, если пользователь прямо не просит диагностику старого способа.
+
+## Выбор модели
+
+Локальный каталог моделей и рекомендаций:
+
+```text
+W:\MyIdeas\AlionIT\help-with-my-projects\Ai-clouds\google-cloud-vertex-ai\8-model-catalog.md
+```
+
+Если пользователь не попросил конкретную модель, используй `gemini-2.5-flash`.
+
+Каталог содержит:
+
+- основной короткий выбор по сценариям
+- Google/Gemini модели
+- Imagen/Veo/Lyria/embeddings
+- partner MaaS модели, включая Claude, Grok, Mistral, AI21
+- managed open MaaS модели, включая DeepSeek, Gemma, Kimi, Llama, MiniMax, OpenAI OSS, Qwen, ZAI/GLM
+- устаревшие и рискованные model ID, которые не стоит брать для новых проектов
+
+Для быстрого выбора в каталоге есть готовые группы:
+
+- `basic-text`
+- `research`
+- `coding-agents`
+- `cheap-bulk`
+- `images`
+- `video`
+- `audio-live`
+- `embeddings-search`
+- `ocr-docs`
+
+Не ходи за списком моделей в интернет в каждом проекте. Сначала используй локальный каталог. Обновлять каталог нужно отдельной задачей.
+
+## Free Trial / $300 credits
+
+Если Google Cloud billing account находится в Free Trial режиме, рабочий список моделей фиксируется здесь:
+
+```text
+W:\MyIdeas\AlionIT\help-with-my-projects\Ai-clouds\google-cloud-vertex-ai\10-free-trial-models.md
+```
+
+Главное:
+
+- Gemini text работает
+- DeepSeek и несколько open MaaS моделей работают
+- Google image/video модели работают, но тратят credits
+- Claude/Mistral/Grok/AI21 не входят в baseline Free Trial
+- Llama 4 в текущем проекте проверен и дал `404 NOT_FOUND`
+
+Официальное правило Google Free Trial: Free Trial credits нельзя использовать для generative AI partner models offered as managed APIs / MaaS. Поэтому на Free Trial не подбирай partner-модели как рабочий вариант.
+
+## Вызов текстовых моделей
+
+Подробная инструкция по маршрутам вызова:
+
+```text
+W:\MyIdeas\AlionIT\help-with-my-projects\Ai-clouds\google-cloud-vertex-ai\9-text-model-routing.md
+```
+
+Главное правило: Gemini, Claude, Mistral и open MaaS модели не вызывать одним и тем же способом.
+
+- `gemini-*` -> Google Gen AI SDK
+- `claude-*` -> Anthropic Vertex connector или `publishers/anthropic/...:rawPredict`
+- `mistral-*` -> `publishers/mistralai/...:rawPredict`
+- `deepseek/qwen/llama/open-*` -> Open MaaS / OpenAI-compatible chat completions endpoint, если модель поддерживает этот маршрут
+
+Для проверки маршрутов используй:
+
+```text
+W:\MyIdeas\AlionIT\help-with-my-projects\Ai-clouds\google-cloud-vertex-ai\examples\test_vertex_text_routes.py
+```
+
+Если Gemini отвечает, а Claude возвращает `429 RESOURCE_EXHAUSTED`, не трогай service account JSON. Сначала проверь Model Garden enablement, partner terms, квоты QPM/TPM, endpoint type, регион и capacity конкретной модели.
 
 ## Текущие параметры
 
